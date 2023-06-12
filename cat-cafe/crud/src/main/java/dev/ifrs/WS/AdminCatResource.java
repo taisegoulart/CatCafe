@@ -7,7 +7,7 @@ import java.util.List;
 
 
 @Path("/admin/cats")
-@Produces(MediaType.APPLICATION_JSON)
+@Produces(MediaType.APPLICATION_JSON) //sempre tem que mandar json e produzir jason
 @Consumes(MediaType.APPLICATION_JSON)
 @Transactional
 @RolesAllowed("admin")
@@ -22,6 +22,7 @@ public class AdminCatResource {
     public Response addCat(Cat cat) {
         cat.persist();
         return Response.status(Response.Status.CREATED).entity(cat).build();
+        
     }
 
     @PUT
@@ -36,6 +37,7 @@ public class AdminCatResource {
             cat.setBio(updatedCat.getBio());
         }
         return cat;
+        //pensar sobre a persistência
     }
 
  @DELETE
