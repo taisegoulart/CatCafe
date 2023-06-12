@@ -11,6 +11,7 @@ import java.util.List;
 @Transactional
 @RolesAllowed("admin")
 public class AdminCoffeeResource {
+    //pensamento: fazer com formulário?
 
     @GET
     public List<Coffee> getAllCoffees() {

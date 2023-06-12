@@ -4,6 +4,8 @@ import jakarta.persistence.Column;
 import javax.persistence.*;
 import java.time.LocalDateTime;
 
+//TODO: COLOCAR EM PASTAS DIFERENTES PARA SEREM SERVIÇOS DIFERENTWS, CUIDAR A COMUNICAÇÃO COM O PORPERTIES
+
 @Entity
 public class Booking extends PanacheEntityBase {
 
